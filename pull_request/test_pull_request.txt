@@ -1,0 +1,11 @@
+1. Forked Corner Geeks Repo (https://github.com/CornerGeeks/test-git)
+2. Cloned my fork (https://github.com/thewheat/test-git) to my computer
+3. Add remote to original source (typically called "upstream")
+       git remote add upstream https://github.com/CornerGeeks/test-git
+4. Added this file
+5. Commit this file
+6. After commit pull changes from upstream
+       git pull upstream/master master
+7. *fix conflicts if any & commit*
+8. Go to my forks pull request page: https://github.com/thewheat/test-git/compare/
+   (need to check this in and test with Github page cause I can't remember what it is supposed to look like)
