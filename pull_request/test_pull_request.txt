@@ -4,8 +4,15 @@
        git remote add upstream https://github.com/CornerGeeks/test-git
 4. Added this file
 5. Commit this file
-6. After commit pull changes from upstream
-       git pull upstream/master master
-7. *fix conflicts if any & commit*
-8. Go to my forks pull request page: https://github.com/thewheat/test-git/compare/
-   (need to check this in and test with Github page cause I can't remember what it is supposed to look like)
+6. After commit fetch changes from upstream and merge
+       git fetch upstream
+       git merge upstream/master master
+7. Fix any conflicts (if necessary) and commit
+8. Go to my fork's pull request page and click "New pull request" https://github.com/thewheat/test-git/pulls
+9. By default, base fork, base, head fork and compare are selected. If not below are the typical settings
+       base fork: CornerGeeks/test-git (i.e. upstream repo to submit pull request to)
+       base     : master
+       head fork: My repo thewheat/test-git
+       compare  : master
+10. Ensure that that there is the "Able to merge", "These branches can be automatically merged" message. 
+    If not, you probably didn't did a git fetch upstream, git merge upstream/master master (and fix conflicts and commit if necessary)
